@@ -1,26 +1,46 @@
-set number
-filetype plugin indent on
-syntax on
+" Supprime la compatibilité avec VI
 set nocompatible
+
+" Affiche les numéros de ligne
 set number
+
+"Active la coloration syntaxique
 syntax on
-filetype plugin indent on
+
+" Active les plugins
+filetype plugin on
+
+" Active le support de l'indentation
+filetype indent on
+
+" Active la surbrillance de la ligne en cours
 set cursorline
+
+" Et la rend plus jolie
 highlight CursorLine cterm=NONE ctermbg=234
+
+" Active le support de la souris
 set mouse=a
+
+" Affiche les caractères non imprimables après des caractères (sauf EOL)
 set list
 set listchars=tab:\|\ ,extends:>,precedes:<,trail:∙,nbsp:∙
 
-" Use spaces instead of tabs
+" Utilise des espaces à la place des tabulations
 set expandtab
 
-" Be smart when using tabs ;)
+" tabulations intelligentes
  set smarttab
-" 1 tab == 4 spaces
+
+" 1 tab == 4 espaces
 set shiftwidth=4
 set tabstop=4
-set autoindent "Auto indent
-set smartindent "Smart indent
+
+" Indentation automatique
+set autoindent
+
+" Indentation intelligente
+set smartindent
 
 " Wildmenu
 set  wildmenu
@@ -64,6 +84,8 @@ set encoding=utf8
 " Informe des buffers ouverts en fermeture
 set viminfo^=%
 
-" Ligne de statut
+" Ligne de status toujours présente
 set laststatus=2
+
+" Format de la ligne de status
 set statusline=[%n]\ %<%F\ \ \ [%R%H%W%Y%M][%{&ff}]\ \ %=\ Line:\ %l\/%L\ Col:%c\ \ \ %p%%\ \ \ @%{strftime(\"%H:%M:%S\")}
