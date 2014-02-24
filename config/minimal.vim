@@ -42,6 +42,9 @@ set autoindent
 " Indentation intelligente
 set smartindent
 
+" Active / Désactive via F2 l'indentation pour le coller
+set pastetoggle=<F2>
+
 " Wildmenu
 set  wildmenu
 set wildmode=longest:full,full
