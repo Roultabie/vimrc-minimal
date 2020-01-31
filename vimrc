@@ -1,3 +1,5 @@
+scriptencoding utf-8
+set encoding=utf-8
 set nocompatible
 " Chargement de pathogen, si il n'est pas installé, on n'affiche pas de
 " message d'erreur
